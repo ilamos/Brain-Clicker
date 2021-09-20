@@ -8,4 +8,10 @@
  
  ## Requirements
  TKinter <br>
- Pillow
+ ```
+ pip install tk
+ ```
+ Pillow <br>
+  ```
+ pip install Pillow
+ ```
