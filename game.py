@@ -64,9 +64,11 @@ class cookie_clicker():
         self.upgrade_label.pack()
         self.upgrade_clicker1 = GUI.Button(text="Clicker (100)", command=self.upgrade_clicker)
         self.upgrade_clicker1.pack()
-        self.upgrade_cps1 = GUI.Button(text="AutoClicker (1CPS) (200)", command= lambda: self.upgrade_cps(1, 200))
+        self.upgrade_cps1 = GUI.Button(text="AutoClicker (1CPS) (350)", command= lambda: self.upgrade_cps(1, 350))
         self.upgrade_cps1.pack()
-        self.upgrade_cps2 = GUI.Button(text="AutoClicker (10CPS) (10000)", image=self.concerned_image, compound=TOP, command= lambda: self.upgrade_cps(10, 10000))
+        self.upgrade_cps2 = GUI.Button(text="AutoClicker (10CPS) (1000)", image=self.concerned_image, compound=TOP, command= lambda: self.upgrade_cps(10, 1000))
+        self.upgrade_cps2.pack()
+        self.upgrade_cps2 = GUI.Button(text="AutoClicker (100CPS) (10000)", image=self.concerned_image, compound=TOP, command= lambda: self.upgrade_cps(100, 10000))
         self.upgrade_cps2.pack()
 
     def game_loop(self):
@@ -77,7 +79,7 @@ class cookie_clicker():
 
     def __init__(self):
         self.init_window()
-        self.game_window.geometry("200x200")
+        self.game_window.geometry("200x300")
         self.game_window.title("Brain clicker")
         self.game_window.resizable(False, False)
         self.gamedata = self.game_data()
